@@ -1,0 +1,313 @@
+*,*:brfore,*:after{
+	box-sizing: border-box;
+}
+body{
+    font-family: 'Noto Sans TC', '微軟正黑體', sans-serif;
+}
+.main_body{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home.svg);
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+
+.m0-a{
+    margin: 0 auto;
+}
+.d-flex{
+    display: flex;
+}
+
+.ta-c{
+    text-align: center;
+}
+
+.mb-16{
+    margin-bottom: 16px;
+}
+.mb-24{
+    margin-bottom: 24px;
+}
+.mb-28{
+    margin-bottom: 28px;
+}
+.mb-32{
+    margin-bottom: 32px;
+}
+.mb-48{
+    margin-bottom: 48px;
+}
+
+.mb-100{
+    margin-bottom: 100px;
+}
+.ml-16{
+    margin-left: 16px;
+}
+.pl-16{
+    padding-left: 16px;
+}
+
+.pl-32{
+    padding-left: 32px;
+}
+
+.pr-16{
+    padding-right: 16px;
+}
+.pr-32{
+    padding-right: 32px;
+}
+.pt-32{
+    padding-top: 32px;
+}
+.pt-48{
+    padding-top: 48px;
+}
+.pb-16{
+    padding-bottom: 16px;
+}
+.jc-sb{
+    justify-content: space-between;
+}
+.jc-c{
+    justify-content: center;
+}
+.header{
+    .menu{
+        max-width: 1085px;
+        height: 88px;
+        align-items: center;
+        justify-content: space-between;
+        @media(max-width: 375px){
+            border-bottom: 2px solid #FFD153;
+        }
+        .logo{
+            height: 40px;
+            @media(max-width: 375px){
+                height: 24px;
+            }
+        }
+        .btn{
+            background: #FF5D50;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            &:hover{
+                background: #fff;
+                color: #FF5D50;
+                border: 1px solid #FF5D50;
+            }
+            @media(max-width: 375px){
+                margin-right: 20px;;
+            }
+        }
+    }
+    .header_wrap{
+        max-width: 1085px;
+        align-items: center;
+        padding-bottom: 207px;
+        justify-content: space-between;
+        .header_text{
+            width: 50%;
+            @media(max-width: 375px){
+                width: 100%;
+            }
+            .product_name{
+                color: #56C4C5;
+                font-size: 18px;
+                line-height: 26px;
+                margin-bottom: 8px;
+            }
+            .header_title{
+                font-size: 48px;
+                line-height: 70px;
+            }
+            .header_subtitle{
+                font-size: 20px;
+                line-height: 29px;
+            }
+        }
+        .header_img{
+            width: 532px;
+            margin-left: 102px;
+            padding-top: 30px;
+        }
+    }
+    
+    
+}
+
+.main{
+    max-width: 1120px;
+}
+
+.title{
+    font-size: 32px;
+    line-height: 46px; 
+}
+.text_title{
+    font-size: 18px;
+    line-height: 26px;
+    color: #221E1F;
+}
+.text{
+    font-size: 16px;
+    line-height: 24px;
+    color: #747474;
+
+}
+.text-cyanBlue{
+    color: #56C4C5;
+}
+
+.fw-b{
+    font-weight: bolder;
+}
+
+.btn{
+    padding: 12px 32px;
+    border: none;
+    border-radius: 22px;
+    color: white;
+    text-decoration: none;
+    background-color: #56C4C5;
+    
+    &:hover{
+        color: #56C4C5;
+        background: #fff;
+        border: 1px solid #56C4C5;
+    }
+}
+
+.platform{
+    max-width: 969px;
+    
+    .platform_wrap{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        @media(max-width: 768px) {
+            justify-content: space-evenly;  
+        }
+
+        .platform_list{
+            width: 25.2%;
+            img{
+                width: 90px;
+                height: auto;
+            }
+            .appName{
+                font-size: 24px;
+                font-weight: bolder;
+                line-height: 35px;
+
+                @media(max-width: 768px) {
+                    font-size: 20px;
+                    line-height: 1.25em;
+                }
+            }
+
+           
+        }
+    }       
+    
+}
+
+.character{
+    max-width: 1088px;
+    .chara_wrap{
+        //flex-wrap: wrap;
+
+        .chara_list{
+            width: 260px;
+            box-shadow: 0px 2px 10px #00000014;
+            border-radius: 12px;
+            margin-right: 16px;
+        
+            img{
+                border-radius: 12px 12px 0 0;
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    
+    
+
+}
+
+.service{
+    max-width: 1039px;
+    justify-content: space-between;
+    align-items: center;
+    .srv_wrap{
+        width: 50%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .srv_list{
+            width: 208px;
+            height: 232px;
+            border-radius: 12px;
+            box-shadow: 0px 2px 10px #00000014;
+            background-color: #fff;
+            .srv_img_bg{
+                width: 86px;
+                height: 86px;
+                background-color: #fff;
+                border-radius: 50%;
+                box-shadow: 0px 2px 10px #00000014;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+.comment{
+    max-width: 1088px;
+    margin-bottom: 134px;
+    .cmt_wrap{
+        justify-content: space-between;
+        .cmt_list{
+            box-shadow: 0px 2px 10px #00000014;
+            position: relative;
+            margin-right: 16px;
+            .cmt_text{
+                border-bottom: 1px solid #DDDDDD;
+                width: 288px;
+            .cmt_people{
+                margin-top: 8px;
+            }
+            }
+            .cmt_img{
+                width: 80px;
+                border-radius: 50%;
+                position: absolute;
+                top: -60px;
+                left: 32px;
+                
+            }
+        }
+    }
+    
+}
+
+.main_footer{
+    height: 503px;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/home_footer.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.ftr_title{
+        padding-top: 260px;
+    }
+    .ftr_text{
+        background: #F5F5F5;
+        margin-top: 149px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
